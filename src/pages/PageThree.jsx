@@ -1,7 +1,9 @@
+import Footer from "../components/Footer";
+
 export default function PageThree({data}) {
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen bg-white px-6">
+      <div className="flex flex-col items-center justify-center gap-12">
         <h1 className="!text-amber-600 text-3xl font-bold">MULAH</h1>
         <h2 className="text-gray-700 text-xl font-semibold mt-6">
           Your Details
@@ -20,9 +22,7 @@ export default function PageThree({data}) {
             <strong>Email:</strong> {data.email}
           </p>
         </div>
-        <p className="mt-6 text-gray-500">
-          Powered by <span className="text-blue-500">MulahRewards.com</span>
-        </p>
+        <Footer/>
       </div>
     </>
   );
