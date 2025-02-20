@@ -16,7 +16,7 @@ export default function PageTwo({ nextPage, setData }) {
         <img src={mulahIcon} alt="Icon" className="w-1/3" />
       </div>
       <h2>Registration</h2>
-      <span style={{ fontStyle: "italic" }}>Please fill up your details</span>
+      <span style={{ fontStyle: "italic" }} className="text-start">Please fill up your details</span>
       <div className="flex flex-col gap-12">
         <Input
           label={"Name"}
@@ -36,6 +36,7 @@ export default function PageTwo({ nextPage, setData }) {
           type={"email"}
           setFormData={setFormData}
           field={"email"}
+          placeholder={"Email Address"}
         />
       </div>
       <button

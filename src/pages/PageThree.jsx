@@ -10,7 +10,7 @@ export default function PageThree({data}) {
         </h2>
         <div className="mt-6 w-full max-w-md text-gray-700">
           <p>
-            <strong>Mobile Number:</strong> +60 {data.mobileNumber}
+            <strong>Mobile Number:</strong> {data.mobileNumber}
           </p>
           <p>
             <strong>Name:</strong> {data.name}
